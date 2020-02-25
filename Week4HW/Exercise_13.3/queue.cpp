@@ -41,10 +41,12 @@ int main(){
 
 void QTest(){
     queue q = queue();
+    cout << "Testing pushing\n";
     for(int i=0;i<21;i++){
         q.put(i);
         q.print();
     }
+    cout << "Testing popping\n";
     for(int i=0;i<21;i++){
         assert(q.get() == i);
         q.print();
